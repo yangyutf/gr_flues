@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gr.his.mapper.TestMapper">
+
+  <!-- 公共查询条件 -->
+  <sql id="common_where_if">
+    1=1
+    <if test="id != null">
+      AND id = #{id,jdbcType=INTEGER}
+    </if>
+    <if test="userKey !=null">
+      AND user_key = #{userKey,jdbcType=VARCHAR}
+    </if>
+    <if test="loginName !=null">
+      AND login_name = #{loginName,jdbcType=VARCHAR}
+    </if>
+    <if test="password !=null">
+      AND password = #{password,jdbcType=VARCHAR}
+    </if>
+    <if test="pwdCode !=null">
+      AND pwd_code = #{pwdCode,jdbcType=VARCHAR}
+    </if>
+    <if test="nickName !=null">
+      AND nick_name = #{nickName,jdbcType=VARCHAR}
+    </if>
+    <if test="sex !=null">
+      AND sex = #{sex,jdbcType=CHAR}
+    </if>
+    <if test="phone !=null">
+      AND phone = #{phone,jdbcType=VARCHAR}
+    </if>
+    <if test="headerUrl !=null">
+      AND header_url = #{headerUrl,jdbcType=VARCHAR}
+    </if>
+    <if test="regType !=null">
+      AND reg_type = #{regType,jdbcType=CHAR}
+    </if>
+    <if test="status !=null">
+      AND status = #{status,jdbcType=CHAR}
+    </if>
+    <if test="userName !=null">
+      AND user_name = #{userName,jdbcType=VARCHAR}
+    </if>
+    <if test="idCard !=null">
+      AND id_card = #{idCard,jdbcType=VARCHAR}
+    </if>
+    <if test="birthday !=null">
+      AND birthday = #{birthday,jdbcType=DATE}
+    </if>
+    <if test="sayMood !=null">
+      AND say_mood = #{sayMood,jdbcType=VARCHAR}
+    </if>
+    <if test="invitationCode !=null">
+      AND invitation_code = #{invitationCode,jdbcType=VARCHAR}
+    </if>
+    <if test="inviterId !=null">
+      AND inviter_id = #{inviterId,jdbcType=VARCHAR}
+    </if>
+    <if test="country !=null">
+      AND country = #{country,jdbcType=VARCHAR}
+    </if>
+    <if test="province !=null">
+      AND province = #{province,jdbcType=VARCHAR}
+    </if>
+    <if test="city !=null">
+      AND city = #{city,jdbcType=VARCHAR}
+    </if>
+    <if test="language !=null">
+      AND language = #{language,jdbcType=VARCHAR}
+    </if>
+    <if test="isPayPwd !=null">
+      AND is_pay_pwd = #{isPayPwd,jdbcType=CHAR}
+    </if>
+    <if test="isReal !=null">
+      AND is_real = #{isReal,jdbcType=CHAR}
+    </if>
+    <if test="roleId !=null">
+      AND role_id = #{roleId,jdbcType=CHAR}
+    </if>
+    <if test="remind !=null">
+      AND remind = #{remind,jdbcType=CHAR}
+    </if>
+    <if test="isNodeOrChannel !=null">
+      AND is_node_or_channel = #{isNodeOrChannel,jdbcType=CHAR}
+    </if>
+    <if test="updateDate !=null">
+      AND update_date = #{updateDate,jdbcType=TIMESTAMP}
+    </if>
+    <if test="createDate !=null">
+      AND create_date = #{createDate,jdbcType=TIMESTAMP}
+    </if>
+    <if test="channelId !=null">
+      AND channel_id = #{channelId,jdbcType=INTEGER}
+    </if>
+    <if test="isDb !=null">
+      AND is_db = #{isDb,jdbcType=CHAR}
+    </if>
+  </sql>
+
+
+
+  <!-- 查询用户信息列表 -->
+  <select id="getUserById" parameterType="com.gr.his.entity.User" resultType="com.gr.his.entity.User">
+    SELECT * from user t
+    <where>
+      t.username = #{name,jdbcType=VARCHAR}
+    </where>
+  </select>
+
+<!-- 调用存储过程 -->
+  <select id="addMySQLStorage" parameterType="com.gr.his.entity.Db" resultType="java.lang.Integer" >
+ 	  <![CDATA[
+		    {call his_dynamic_db(
+		    #{dbName,mode=IN,jdbcType=VARCHAR},
+		    #{dbTable,mode=IN,jdbcType=VARCHAR}
+		    )}
+		]]>
+</select>
+
+</mapper>
