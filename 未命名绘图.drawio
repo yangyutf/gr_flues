@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-07T07:39:48.441Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="pVe3faQSj8JvkKeLfFJD" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-07T08:25:53.550Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="D_sscfhfxs9f3fU1ZdCl" version="24.0.2" type="github">
   <diagram name="第 1 页" id="3mh0vr8qd8ZHPuX3uXLf">
     <mxGraphModel dx="1050" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,13 +7,13 @@
         <mxCell id="lbR6kca6G6t0qnoAH2Vn-1" value="老师" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="30" y="120" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-2" value="添加考试界面" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-2" value="题目查询界面" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="240" y="120" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-3" value="添加考试后台" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-3" value="题目查询后台" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="440" y="120" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-4" value="考试数据库" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-4" value="题目数据库" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="640" y="120" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="lbR6kca6G6t0qnoAH2Vn-5" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
@@ -46,7 +46,7 @@
             <mxPoint x="250" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-10" value="1.老师查看考试管理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-10" value="1.老师查看题目信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="95" y="218" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lbR6kca6G6t0qnoAH2Vn-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
@@ -55,8 +55,8 @@
             <mxPoint x="460" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-12" value="2.老师添加考试" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="315" y="258" width="110" height="30" as="geometry" />
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-12" value="2.老师编辑，更新，&lt;div&gt;删除题目信息&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="240" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lbR6kca6G6t0qnoAH2Vn-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -64,8 +64,8 @@
             <mxPoint x="660" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-14" value="3.添加考试信息保存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="520" y="288" width="130" height="30" as="geometry" />
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-14" value="3。题目操作信息保存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="515" y="288" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lbR6kca6G6t0qnoAH2Vn-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -73,8 +73,8 @@
             <mxPoint x="500" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-16" value="4.返回添加考试保存成功信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="495" y="364" width="180" height="30" as="geometry" />
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-16" value="4.返回题目修改信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="364" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lbR6kca6G6t0qnoAH2Vn-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.488;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="lbR6kca6G6t0qnoAH2Vn-35">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -82,7 +82,7 @@
             <mxPoint x="300" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-20" value="5.返回添加考试成功信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-20" value="5.返回题目相关修改信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="300" y="394" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lbR6kca6G6t0qnoAH2Vn-21" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -121,8 +121,8 @@
             <mxPoint x="95" y="430.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lbR6kca6G6t0qnoAH2Vn-38" value="6.老师接收信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="115" y="404" width="110" height="30" as="geometry" />
+        <mxCell id="lbR6kca6G6t0qnoAH2Vn-38" value="6.老师查看题目更新信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="95" y="404" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
